@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment 3: Problem 3</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="main-container" v>
+      <h1 id="success"></h1>
+      <form>
+        Username:<br />
+        <input type="text" name="username" id="username" />
+        <br /><br />
+        Email:<br />
+        <input type="text" name="email" id="email" />
+        <br /><br />
+        Password:<br />
+        <input type="password" name="password" id="password" />
+        <br /><br />
+        <button onclick="validate()">Login</button>
+      </form>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    let validate = () => {
+      event.preventDefault();
+      if (document.getElementById("password").value !== "12345678") {
+        alert("Incorrect Password");
+      } else {
+        document.getElementById("success").innerHTML =
+          document.getElementById("username").value +
+          " " +
+          document.getElementById("email").value +
+          " " +
+          document.getElementById("password").value;
+
+        document.getElementById("username").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+      }
+    };
+  </script>
+</html>

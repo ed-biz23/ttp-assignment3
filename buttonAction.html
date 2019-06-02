@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment 3: Problem 1</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <button class="btn left" id="left" onclick="btnFunc(this.id)">
+        Right
+      </button>
+      <h2 id="message"></h2>
+      <button class="btn right" id="right" onclick="btnFunc(this.id)">
+        Right
+      </button>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    let btnFunc = id => {
+      if (id === "left") {
+        document.getElementById("message").innerHTML = "I'm right!";
+      } else {
+        document.getElementById("message").innerHTML = "No I'm right!";
+      }
+    };
+  </script>
+</html>

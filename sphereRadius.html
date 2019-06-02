@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment 3: Problem 4</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <h1>Sphere's Volume</h1>
+      <p>Input radius value and get the volume of a sphere.</p>
+      <form>
+        <input type="text" name="radius" id="radius" />
+        <button onclick="calculate()">Calculate</button>
+      </form>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    let calculate = () => {
+      event.preventDefault();
+      let radius = Math.abs(document.getElementById("radius").value);
+      let voulume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+      alert("Volume of the sphere: " + voulume.toFixed(3));
+    };
+  </script>
+</html>

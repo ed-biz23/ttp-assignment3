@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TTP Assignment 3</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
-    <button class="btn success" id="successButton">Success</button>
-    <button class="btn info">Info</button>
-    <button class="btn warning">Warning</button>
-    <button class="btn danger">Danger</button>
-    <button class="btn default" onclick="myTest()">Default</button>
+    <div class="main-container">
+      <h1>TTP Assignment 3</h1>
+      <ul class="home-lists">
+        <li>
+          <a href="./buttonAction.html" target="_blank"
+            >Problem 1: Button Action</a
+          >
+        </li>
+        <li>
+          <a href="./hoverAlert.html" target="_blank">Problem 2: Hover Alert</a>
+        </li>
+        <li>
+          <a href="./formValidation.html" target="_blank"
+            >Problem 3: Form Validation</a
+          >
+        </li>
+        <li>
+          <a href="./sphereRadius.html" target="_blank"
+            >Problem 4: Sphere Radius</a
+          >
+        </li>
+      </ul>
+    </div>
   </body>
-  <script>
-    console.log("Hello world from Lehman College");
-    let myTest = () => {
-      alert("I have been clicked");
-      document.getElementByID("successButton").innerHTML =
-        "New text for Success!";
-      alert(document.getElementByID("successButton").innerHTML);
-    };
-  </script>
 </html>

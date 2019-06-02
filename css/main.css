@@ -1,0 +1,44 @@
+html,
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  background: #000;
+  color: #fff;
+  height: 100%;
+  background: rgb(34, 195, 124);
+  background: linear-gradient(
+    148deg,
+    rgba(34, 195, 124, 1) 0%,
+    rgba(253, 242, 45, 1) 100%
+  );
+}
+
+.main-container {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-lists {
+  list-style: none;
+}
+
+.home-lists a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.home-lists li {
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
+}
+
+.home-lists a:hover {
+  color: lime;
+}
